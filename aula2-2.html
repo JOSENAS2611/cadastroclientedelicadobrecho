@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    *{
+      background-color: rgb(218, 163, 193);
+    }
+    h1 {
+      text-align: center;
+      text-transform:uppercase;
+      color: rgb(14, 0, 11);
+      border: 2px solid black;
+
+    }
+    legend{
+      display:block;
+    }
+    .tamanho {
+      border: 2px solid black;
+      margin-top: 20px;
+      
+      
+
+    }
+    #acessorio { 
+      border: 2px solid black;margin-top: 20px;
+    }
+  </style>
+  <title>
+    
+    CADASTRO DE CLIENTE DELICADO BRECHÓ
+  </title>
+</head>
+<body>
+<h1>CADASTRO DE CLIENTES DELICADO BRECHÓ</h1>
+<form method="get">
+  <p><label>Nome do Cliente: <input name="nome" required placeholder="Seu nome"></label></p>
+  <p><label>Telefone: <input type=tel name="telefone" placeholder="Telefone"></label></p>
+  <p><label>E-mail: <input type=email name="email" placeholder="email" ></label></p>
+  
+  <div class="tamanho"> TAMANHO
+    <di id="taman">
+  <p><label> <input type=radio name="tamanho" required value="pequena"> P </label></p>
+  <p><label> <input type=radio name="tamanho"  required value="media"> M </label></p>
+  <p><label> <input type=radio name="tamanho"  required value="grande"> G </label></p>
+  <p><label> <input type=radio name="tamanho" required value="babylock"> BB </label></p>
+  <p><label> <input type=radio name="tamanho"  required value="ggrande"> GG </label></p>
+  </div>
+  </div>
+ 
+  <!--<fieldset>!-->
+  <div id="acessorio"> ACESSORÍOS
+  <p><label> <input type=checkbox name="extras" value="brinco"> brinco </label></p>
+  <p><label> <input type=checkbox name="extras" value="colar"> Colar </label></p>
+  <p><label> <input type=checkbox name="extras" value="anel"> Anel/aliança  </label></p>
+  <p><label> <input type=checkbox name="extras" value="cinto"> Cinto </label></p>
+  </div>
+  <!--</fieldset>!-->
+  <p><label>Hora da entrega: <input type=time min="11:00" max="21:00" step="900" name="entrega" required></label></p>
+  <p><label>Dia da entrega: <input type=date  name="data" required></label></p>
+  <p><label>Instruções de entrega: <textarea name="comentarios" maxlength=1000></textarea></label></p>
+  <p><button>Fazer pedido</button></p>
+</form>
+</body>
+</html>
